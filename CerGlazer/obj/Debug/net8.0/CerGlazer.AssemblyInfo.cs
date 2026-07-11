@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CerGlazer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99ad0654b8774d89f027d6fac23826859a237ae2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CerGlazer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CerGlazer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
