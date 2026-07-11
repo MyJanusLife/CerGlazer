@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CerGlazer.Models.GlazeRecipe>
+@{
+}
+@* <p>Here is a list of glaze recipes @Model.ToList();</p> *@
+
+@{
+    ViewData["Title"] = "Glaze Repository";
+}
+
+<h2>Glaze Repository</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Cone)</th>
+            <th>@Html.DisplayNameFor(model => model.Color)</th>
+            <th>@Html.DisplayNameFor(model => model.PreferredApplicationMethod)</th>
+            <th>@Html.DisplayNameFor(model => model.Notes)</th>
+            <th>@Html.DisplayNameFor(model => model.Ingredients)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var glaze in Model)
+            {
+                <tr>
+                    <td>@glaze.Name</td>
+                    <td>@glaze.Cone</td>
+                    <td>@glaze.Color</td>
+                    <td>@glaze.PreferredApplicationMethod</td>
+                    <td>@glaze.Notes</td>
+                    <td>
+                        @foreach (var material in glaze.Ingredients)
+                        {
+                            @material.Name
+                        }
+                    </td>
+                </tr>              
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3" class="text-center">No glaze recipes found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
