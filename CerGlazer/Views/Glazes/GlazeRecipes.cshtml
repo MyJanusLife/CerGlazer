@@ -34,7 +34,13 @@
                     <td>
                         @foreach (var material in glaze.Ingredients)
                         {
-                            @material.Name
+                            <table>
+                                <tr>
+                                    <td>@material.Name</td> 
+                                    <td>@material.Amount</td>
+                                    <td>@material.Notes</td>
+                                </tr>                                                               
+                            </table>
                         }
                     </td>
                 </tr>              
