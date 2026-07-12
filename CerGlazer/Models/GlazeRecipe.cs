@@ -3,7 +3,7 @@
 namespace CerGlazer.Models
 {
     public class GlazeRecipe : Glaze
-    {      
+    {
         public string? Color { get; set; }
 
         public required List<GlazeMaterial> Ingredients { get; set; }

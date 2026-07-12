@@ -5,6 +5,8 @@
     /// </summary>
     public class GlazeMaterial
     {
+        public int Id { get; set; }
+
         /// <summary>
         /// Name of the glaze material (ingredient).
         /// </summary>

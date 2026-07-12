@@ -44,7 +44,7 @@ namespace CerGlazer.Controllers
                     {
                         new GlazeMaterial { Name = "Feldspar", Amount = 40 },
                         new GlazeMaterial { Name = "Kaolin", Amount = 40 },
-                        new GlazeMaterial { Name = "Iron Oxide", Amount = 20 }
+                        new GlazeMaterial { Name = "Iron Oxide", Amount = 20, Notes = "Glaze test using black or red oxide to achieve desired effects." }
                     },
                     PreferredApplicationMethod = Models.Enums.ApplicationMethods.Brush,
                     Notes = "A traditional Japanese glaze."
