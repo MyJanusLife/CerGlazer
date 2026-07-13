@@ -19,6 +19,7 @@ namespace CerGlazer.Controllers
         /// <returns>IActionResult</returns>
         public IActionResult GlazeRecipes()
         {
+            
             var glazeRecipes = new List<GlazeRecipe>
             {
                 new GlazeRecipe

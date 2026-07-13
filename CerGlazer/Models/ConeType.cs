@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CerGlazer.Models;
 
-[Table("Glaze")]
-public partial class Glaze
+[Keyless]
+[Table("ConeType")]
+public partial class ConeType
 {
-    [Key]
     public int Id { get; set; }
 
-    public string Name { get; set; } = null!;
+    public int ConeValue { get; set; }
 
-    public string Cone { get; set; } = null!;
+    public int? ConeTemperature { get; set; }
 }

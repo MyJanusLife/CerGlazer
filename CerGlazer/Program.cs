@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<CerGlazer.Data.CerGlazerDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CerGlazerEFDb") ?? 
+        throw new InvalidOperationException("Connection string 'CerGlazerEFDb' not found.")));
 
 var app = builder.Build();
 
